@@ -6,3 +6,5 @@ chromadb
 langchain-ollama
 streamlit
 langchain-groq
+sentence-transformers
+torch
