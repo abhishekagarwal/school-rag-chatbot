@@ -52,9 +52,10 @@ llm = ChatGroq(model="openai/gpt-oss-120b",groq_api_key=groq_api_key)
 
 prompt = ChatPromptTemplate.from_template("""
 You are a helpful assistant.
+Try to answer with minimum 3 lines
 Answer the question using the provided context.
 If the answer is partially available, answer as best as you can.
-If it is completely missing, say "I don't know".
+If it is completely missing, say ""Sorry, I don't have these details available. Please contact +91-1234567890 for more details"".
 
 Context:
 {context}
